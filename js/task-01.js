@@ -9,25 +9,38 @@ countCategories(categories);
 
 const itemElements = document.querySelectorAll(".item");
 
-console.log(itemElements);
-
-
-function findTitle (array) {
-    for (const el of array) {
-
+itemElements.forEach((el) => {
         console.log("Category:", el.firstElementChild.textContent);
         console.log("Elements:", el.lastElementChild.children.length);
-    }
-}
-
-findTitle(itemElements);
+});
 
 
-// const title = document.querySelector(".item > h2");
-// const ulInItem = document.querySelector(".item > ul");
 
-// console.log(title);
-// console.log(ulInItem);
+
+
+
+
+
+
+
+
+
+
+// console.log(itemElements);
+
+
+// function findTitle (array) {
+//     for (const el of array) {
+
+//         console.log("Category:", el.firstElementChild.textContent);
+//         console.log("Elements:", el.lastElementChild.children.length);
+//     }
+// }
+
+// findTitle(itemElements);
+
+
+
 
 
 
